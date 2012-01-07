@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="/Scripts/listBoxSelection.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- ======== Header ======== -->
+        <div id="header">
+          
+          
+        </div>
+
+        <!-- ======== Left Sidebar ======== -->
+     <%--    <div id="sidebar">
+          <div>
+                <ul>
+                    <li runat="server" id="liHome"><asp:HyperLink runat="server" ID="lnkHome2" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+              <asp:Repeater ID="rptMenu" runat="server" DataSourceID="SiteMapDataSource1" 
+                        onitemdatabound="rptMenu_ItemDataBound">
+                <ItemTemplate>
+                    <li runat="server" id="liNode">
+                        <asp:HyperLink runat="server" ID="lnkMenu" NavigateUrl='<%# Eval("Url") %>'><%#Eval("Title")%></asp:HyperLink>
+                    </li>
+                </ItemTemplate>
+              </asp:Repeater>
+                </ul>
+              <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" />
+          </div>
+        </div> --%>
+
+        <!-- ======== Main Content ======== -->
+        <div id="main">
+			<div id="content" class="joblist omega">
+		
+				<div id="article">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+					</div>
+			<asp:ContentPlaceHolder id="Left" runat="server" />
+			</div>
+			
+        
+        <!-- ======== Footer ======== -->
+
+        
+       
+    </form>
+</body>
+</html>

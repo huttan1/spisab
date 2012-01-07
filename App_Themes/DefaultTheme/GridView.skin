@@ -1,0 +1,3 @@
+﻿<asp:GridView runat="server" CellPadding="4" CssClass="GridStyle" AllowSorting="True">
+    <HeaderStyle CssClass="HeaderRow" />
+</asp:GridView>

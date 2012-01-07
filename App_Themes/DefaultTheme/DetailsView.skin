@@ -1,0 +1,3 @@
+﻿<asp:DetailsView runat="server" CellPadding="4">
+    <FieldHeaderStyle CssClass="HeaderRow" />
+</asp:DetailsView>
