@@ -74,6 +74,7 @@ public partial class Admin : BasePage
     private List<Job> GetJobs()
     {
         Exception exception = new Exception();
-        return Mamut.GetOrdersFromMamut(exception, Request);
+        return MamutV2.GetOrdersFromMamut(exception, Request);
+        //return Mamut.GetOrdersFromMamut(exception, Request);
     }
 }
