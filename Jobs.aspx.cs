@@ -506,9 +506,8 @@ public partial class Jobs : BasePage
                     {
                         JobContactPhone.Text = jobslist[0].Phone;
 
-                        if (jobslist[0].JobStartDate.ToShortDateString() != "9999-12-31")
+                        if (jobslist[0].JobStartTime.Hour.ToString() != "23")
                         {
-
                             ListItem starttime =
                                 StartTime.Items.FindByText(jobslist[0].JobStartTime.ToShortTimeString().Substring(0, 5)) as ListItem;
                             starttime.Selected = true;
@@ -519,7 +518,7 @@ public partial class Jobs : BasePage
                         }
 
 
-                        if (jobslist[0].JobEndTime.ToShortDateString() != "9999-12-31")
+                        if (jobslist[0].JobEndTime.Hour.ToString() != "23")
                         {
                             ListItem endtime =
                                 EndTime.Items.FindByText(jobslist[0].JobEndTime.ToShortTimeString().Substring(0, 5)) as ListItem;
