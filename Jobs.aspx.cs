@@ -807,7 +807,7 @@ public partial class Jobs : BasePage
                 }
                     var width = e.Item.FindControl("width") as HtmlGenericControl;
                     
-                    width.Attributes["Style"] = "width:" + 100 + "%;overflow:hidden;border:none;min-height:135px;background-color:" + color + ";";
+                    width.Attributes["Style"] = "width:" + 100 + "%;overflow:hidden;border:none;min-height:105px;background-color:" + color + ";";
                     
                 }
 
