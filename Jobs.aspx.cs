@@ -489,6 +489,8 @@ public partial class Jobs : BasePage
             EditArea.Visible = false;
             return;
         }
+
+        JobNewDate.Text = DateTime.Now.ToShortDateString();
         InitButtons();
         if (!Page.IsPostBack)
         {
