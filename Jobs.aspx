@@ -44,11 +44,9 @@
 <b>
 <asp:Label CssClass="LabelDayAdmin" runat="server" ID="NoDateLabel"></asp:Label>
 <br />
-<div class="PersonalBox">
+<div class="PersonalBox" style="visibility:hidden;">
 <asp:Label CssClass="Personal" runat="server" ID="Label2"></asp:Label>
 </div>
-<br /><br />
-
 	<ul class="nav grid_3 alpha">
    <asp:Repeater ID="NoDayRepeater" runat="server" OnItemDataBound="InitJob">
 	<ItemTemplate>
@@ -69,8 +67,7 @@
                   <asp:Label CssClass="LabelDayAdmin" runat="server" ID="day" />
                   <div class="PersonalBox">
                   <asp:Label CssClass="Personal" runat="server" ID="personal"></asp:Label>
-                   </div>
-                   <br /><br />
+                   </div>                   
                    <ul class="nav grid_3 alpha"> 
     <asp:Repeater runat="server" ID="jobs" OnItemDataBound="InitJob"> 
         <ItemTemplate>

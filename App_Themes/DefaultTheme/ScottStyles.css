@@ -644,7 +644,7 @@ span.campaignprice {font-weight:bold; white-space: nowrap;}
 .LabelDayAdmin{margin-left:5px;font-weight:bold;}
 .LabelDay{margin-left:5px;font-size:large; font-weight:bold; background-color:Red;}
 .Personal{font-size:x-small;}
-.PersonalBox{margin-bottom:3px;border-bottom:1px solid #000000;}
+.PersonalBox{margin-bottom:8px;border-bottom:1px solid #000000;height:117px;}
 .OverAllowed{color:Red;}
 
 /*-----------------------------------------------------------------------------

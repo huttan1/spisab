@@ -43,7 +43,7 @@
         
          <div id="subnav" class="grid_3 alpha" style="width:140px;margin-right:0px;">
                   <asp:Label CssClass="LabelDayAdmin" runat="server" ID="month" />
-                  <div class="PersonalBox">                  
+                  <div class="PersonalBox" style="height:0px;">                  
                    </div>
                    <br />
                    <ul class="nav grid_3 alpha"> 

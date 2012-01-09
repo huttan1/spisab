@@ -411,7 +411,7 @@ public partial class Jobs : BasePage
                 }
                 else
                 {
-                    Job currentjob = new Job(new Guid(Request.QueryString["JobID"]), JobName.Text, true, jobslist[0].OrderID, jobslist[0].JobStartDate, jobslist[0].JobEndDate, JobContact.Text, JobAddress.Text, JobComments.Text, jobslist[0].RentStartDate, jobslist[0].RentEndDate, startJobTime, endJobTime, string.Empty, fullday, false, Guid.Empty, string.Empty, JobContactPhone.Text, jobslist[0].Type, string.Empty);
+                    Job currentjob = new Job(new Guid(Request.QueryString["JobID"]), JobName.Text, true, jobslist[0].OrderID, jobslist[0].JobStartDate, jobslist[0].JobEndDate, JobContact.Text, JobAddress.Text, JobComments.Text, jobslist[0].RentStartDate, jobslist[0].RentEndDate, startJobTime, endJobTime, string.Empty, fullday, false, jobslist[0].ParentJobID, string.Empty, JobContactPhone.Text, jobslist[0].Type, string.Empty);
                     job.Add(currentjob);
                 }
             }
@@ -805,7 +805,7 @@ public partial class Jobs : BasePage
                 }
                     var width = e.Item.FindControl("width") as HtmlGenericControl;
                     
-                    width.Attributes["Style"] = "width:" + 100 + "%;overflow:hidden;border:none;background-color:" + color + ";";
+                    width.Attributes["Style"] = "width:" + 100 + "%;overflow:hidden;border:none;height:235px;background-color:" + color + ";";
                     
                 }
 
